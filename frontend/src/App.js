@@ -6,7 +6,7 @@ import UploadForm from './components/UploadForm'; // Import the UploadForm compo
 function App() {
   return (
     <div className="App">
-      <h1>Resume Screening Tool</h1>
+
       <UploadForm /> {/* Render the UploadForm */}
     </div>
   );
