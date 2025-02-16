@@ -1,8 +1,8 @@
 /* Global Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #1f1c2c, #928DAB);
-  color: white;
+  background: linear-gradient(to right, #fef6e4, #f3e8d9);
+  color: #5a4a42;
   text-align: center;
   padding: 20px;
 }
@@ -17,28 +17,43 @@ body {
   gap: 30px;
 }
 
-/* Upload Section */
-.upload-section {
+/* Upload & Ranking Section */
+.upload-section, .ranking-section {
   flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  background: rgba(255, 245, 230, 0.9);
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 12px rgba(150, 120, 90, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(150, 120, 90, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-section:hover, .ranking-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(150, 120, 90, 0.2);
 }
 
 /* Upload Box */
 .upload-box {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.15);
+  background: rgba(255, 245, 230, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgba(150, 120, 90, 0.1);
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.upload-box:hover {
+  background: rgba(255, 245, 230, 1);
+  transform: scale(1.03);
 }
 
 /* Upload Button */
 button {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #c77d63, #e4a07e);
   border: none;
   color: white;
   padding: 12px 18px;
@@ -47,49 +62,40 @@ button {
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
+  box-shadow: 0px 4px 8px rgba(199, 125, 99, 0.4);
   text-transform: uppercase;
 }
 
 button:hover {
   transform: scale(1.05);
-  background: linear-gradient(to right, #ff512f, #dd2476);
-  box-shadow: 0px 6px 15px rgba(255, 65, 108, 0.8);
-}
-
-/* Ranking Section */
-.ranking-section {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to right, #b76a50, #d89272);
+  box-shadow: 0px 6px 12px rgba(199, 125, 99, 0.5);
 }
 
 /* Resume Cards */
 .resume-card {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 245, 230, 0.95);
   padding: 15px;
   margin-bottom: 15px;
-  border-radius: 15px;
-  border: 2px solid #ff4b2b;
-  box-shadow: 3px 3px 15px rgba(255, 65, 108, 0.5);
+  border-radius: 12px;
+  border: 1px solid #d3b29d;
+  box-shadow: 2px 2px 10px rgba(150, 120, 90, 0.08);
   transition: all 0.3s ease-in-out;
   position: relative;
 }
 
 .resume-card:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #ff512f;
+  transform: scale(1.03);
+  background: rgba(255, 245, 230, 1);
+  border-color: #c79a85;
 }
 
 /* Highlighting Top Ranked Resume */
 .top-ranked {
-  border: 3px solid gold;
-  box-shadow: 0px 0px 15px gold;
+  border: 2px solid #d4a34b;
+  box-shadow: 0px 0px 12px rgba(212, 163, 75, 0.5);
 }
 
 /* Resume Icon */
@@ -98,6 +104,7 @@ button:hover {
   height: 40px;
   font-size: 20px;
   margin-right: 15px;
+  color: #c77d63;
 }
 
 /* Resume Info */
@@ -107,40 +114,7 @@ button:hover {
 
 .resume-info p {
   margin: 5px 0;
-}
-
-/* Upload Section - Sexy Upgrade */
-.upload-section {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-
-.upload-section:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.4);
-}
-
-/* Sexy Upload Boxes */
-.upload-box {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.2);
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
-
-.upload-box:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.05);
+  color: #70594c;
 }
 
 /* Stylish File Input */
@@ -154,7 +128,7 @@ button:hover {
 
 .upload-box label {
   display: block;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #c77d63, #e4a07e);
   color: white;
   padding: 12px;
   border-radius: 25px;
@@ -163,13 +137,14 @@ button:hover {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
+  box-shadow: 0px 4px 8px rgba(199, 125, 99, 0.4);
+  margin-bottom: 15px;
 }
 
 .upload-box label:hover {
   transform: scale(1.05);
-  background: linear-gradient(to right, #ff512f, #dd2476);
-  box-shadow: 0px 6px 15px rgba(255, 65, 108, 0.8);
+  background: linear-gradient(to right, #b76a50, #d89272);
+  box-shadow: 0px 6px 12px rgba(219, 126, 92, 0.5);
 }
 
 /* Rank Button */
@@ -180,49 +155,25 @@ button:hover {
   border-radius: 30px;
 }
 
-/* Upload Box - More Spacing & Stylish Text */
-.upload-box p {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #ffcccb;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
-}
-
-/* Added Padding Between File Input & Button */
-.upload-box label {
-  display: block;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
-  color: white;
-  padding: 12px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
+.upload-box {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
-  margin-bottom: 15px; /* 🔥 Adds space between Choose File & Upload */
 }
 
-.file-label {
-  display: inline-block;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
-  color: white;
-  padding: 12px 18px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
-  margin-bottom: 15px;
+.upload-box:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
 }
 
-.file-label:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to right, #ff512f, #dd2476);
+.file-name {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
 }
