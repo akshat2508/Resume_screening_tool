@@ -206,3 +206,23 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
   margin-bottom: 15px; /* 🔥 Adds space between Choose File & Upload */
 }
+
+.file-label {
+  display: inline-block;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
+  margin-bottom: 15px;
+}
+
+.file-label:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff512f, #dd2476);
+}

@@ -64,7 +64,7 @@ def upload_resume():
     db.session.add(new_resume)
     db.session.commit()
 
-    return jsonify({"message": "Resume uploaded and text extracted successfully", "file_path": file_path}), 200
+    return jsonify({"success": True}), 200
 
 # Upload Job Description Endpoint
 @app.route('/upload-job-description', methods=['POST'])
@@ -85,7 +85,7 @@ def upload_job_description():
     db.session.add(new_job)
     db.session.commit()
 
-    return jsonify({"message": "Job description uploaded and text extracted successfully", "file_path": file_path}), 200
+    return jsonify({"success": True}), 200
 
 # Rank Resumes Endpoint
 @app.route('/rank-resumes', methods=['GET','POST'])  # Changed from POST to GET

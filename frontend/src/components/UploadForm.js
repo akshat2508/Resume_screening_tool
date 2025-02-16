@@ -19,8 +19,7 @@ const UploadForm = () => {
       setMessage(response.data.message);
       setError(null);
     } catch (err) {
-      setError('Failed to upload resume');
-      setMessage(null);
+      console.error('Error ranking resumes:', err); 
     }
   };
 
@@ -31,8 +30,7 @@ const UploadForm = () => {
       setMessage(response.data.message);
       setError(null);
     } catch (err) {
-      setError('Failed to upload job description');
-      setMessage(null);
+      console.error('Error ranking resumes:', err); 
     }
   };
 
@@ -42,8 +40,7 @@ const UploadForm = () => {
       setRanking(response.data.ranked_resumes);
       setError(null);
     } catch (err) {
-      setError('Failed to rank resumes');
-      setMessage(null);
+      console.error('Error ranking resumes:', err); 
     }
   };
 
@@ -60,20 +57,19 @@ const UploadForm = () => {
       {/* Left Panel - Upload Section */}
       <div className="upload-section">
   <h1 className="header">RESUME SCREENING TOOL</h1>
-
   <div className="upload-box">
-    <p>Upload Job Description</p>
-    <label htmlFor="jobDescUpload">Choose File</label>
-    <input type="file" id="jobDescUpload" onChange={handleJobDescChange} />
-    <button className="upload-btn" onClick={handleUploadJobDescription}>Upload</button>
-  </div>
+  <p>📄 Upload Job Description</p>
+  <input type="file" id="jobDescUpload" onChange={handleJobDescChange} style={{ display: "none" }} />
+  <label htmlFor="jobDescUpload" className="file-label">Choose File</label>
+  <button className="upload-btn" onClick={handleUploadJobDescription}>Upload</button>
+</div>
 
-  <div className="upload-box">
-    <p>Upload your resume</p>
-    <label htmlFor="resumeUpload">Choose File</label>
-    <input type="file" id="resumeUpload" onChange={handleResumeChange} />
-    <button className="upload-btn" onClick={handleUploadResume}>Upload</button>
-  </div>
+<div className="upload-box">
+  <p>📑 Upload Your Resume</p>
+  <input type="file" id="resumeUpload" onChange={handleResumeChange} style={{ display: "none" }} />
+  <label htmlFor="resumeUpload" className="file-label">Choose File</label>
+  <button className="upload-btn" onClick={handleUploadResume}>Upload</button>
+</div>
 
   <button className="rank-btn" onClick={handleRankResumes}>Rank Resumes</button>
 </div>
