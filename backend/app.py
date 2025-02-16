@@ -85,7 +85,7 @@ def upload_job_description():
     db.session.add(new_job)
     db.session.commit()
 
-    return jsonify({"success": True}), 200
+    return jsonify({"Success": True}), 200
 
 # Rank Resumes Endpoint
 @app.route('/rank-resumes', methods=['GET','POST'])  # Changed from POST to GET
