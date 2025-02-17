@@ -1,4 +1,4 @@
-Here’s the updated README without the MIT license:
+
 
 ---
 
@@ -80,7 +80,7 @@ Frontend runs on **http://localhost:3000**
 
 ## 🧑‍💻 Developers  
 - **Akshat2508**  
-- Open to contributions! Feel free to fork and create pull requests.  
+- **Ashmoneykash** 
 
 ---
 
