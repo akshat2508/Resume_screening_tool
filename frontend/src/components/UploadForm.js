@@ -46,12 +46,12 @@ const UploadForm = () => {
     }
   };
 
-  // Function to assign special icons
+
   const getRankIcon = (rank) => {
-    if (rank === 1) return '🏆'; // Gold trophy for #1
-    if (rank === 2) return '🥈'; // Silver medal for #2
-    if (rank === 3) return '🥉'; // Bronze medal for #3
-    return '📄'; // Default icon for others
+    if (rank === 1) return '🏆';
+    if (rank === 2) return '🥈'; 
+    if (rank === 3) return '🥉';
+    return '📄'; 
   };
 
   return (
