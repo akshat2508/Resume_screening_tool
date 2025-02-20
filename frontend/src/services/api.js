@@ -1,5 +1,7 @@
 import axios from 'axios';
-const API_URL = 'http://127.0.0.1:5000';
+// const API_URL = 'http://127.0.0.1:5000';
+const API_URL = 'http://localhost:5001/';
+
 
 export const uploadResume = async (file) => {
   const formData = new FormData();
